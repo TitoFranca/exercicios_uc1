@@ -1,0 +1,17 @@
+# 1. Criar uma lista vazia
+pares = []
+
+# 2. Percorrer o intervalo de 86 até 906 (passo 2)
+for i in range(86, 907, 2):
+    pares.append(i)  # Adiciona o número à lista
+
+# 3. Imprimir a lista de números
+print("Números pares encontrados:")
+print(pares)
+
+# 4. Calcular a soma usando a função nativa sum()
+total = sum(pares)
+
+print("-" * 30)
+print(f"Quantidade de números: {len(pares)}")
+print(f"A soma total é: {total}")

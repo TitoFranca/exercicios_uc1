@@ -1,0 +1,6 @@
+numero_01 = float(input("Informe Número 1 "))
+numero_02 = float(input("Informe Número 2 "))
+numero_03 = float(input("Informe Número 3 "))
+numero_04 = float(input("Informe Número 4 "))
+media_ponderada = ((numero_01 * 1 + numero_02 * 2 + numero_03 * 3 + numero_04 * 4)/10)
+print(f"Média Ponderada: {media_ponderada}")
