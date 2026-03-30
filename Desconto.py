@@ -1,4 +1,4 @@
-valor_da_compra = float(input(" Valor da Sua Compra "))
+valor_da_compra = float(input(" Valor Sua Compra "))
 if valor_da_compra > 5000.00:
     desconto = 0.2
 else:

@@ -3,10 +3,10 @@ resultado2 = ""
 resultado3 = ""
 resultado4 = ""
 
-numero_01 = float(input("Informe Número 1 "))
-numero_02 = float(input("Informe Número 2 "))
-numero_03 = float(input("Informe Número 3 "))
-numero_04 = float(input("Informe Número 4 "))
+numero_01 = float(input("Informe Numero 1 "))
+numero_02 = float(input("Informe Numero 2 "))
+numero_03 = float(input("Informe Numero 3 "))
+numero_04 = float(input("Informe Numero 4 "))
 
 if numero_01 % 2 == 0 and  numero_01 % 3 == 0:
     resultado1 = f"O número {numero_01} é divisível por 2 ou 3"

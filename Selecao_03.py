@@ -1,4 +1,4 @@
-numero = int(input("Informe um número inteiro "))
+numero = int(input("Escreva um número inteiro "))
 if numero >0:
     print(f"O número {numero} é positivo ")
 elif numero <0:
