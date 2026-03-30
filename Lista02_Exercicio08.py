@@ -1,7 +1,7 @@
 soma_positivos = 0
 quantidade_negativos = 0
 lista_numeros = []
-for i in range (5):
+for i in range (3):
     numero_inteiro = int(input("Informe um número:"))
     lista_numeros.append(numero_inteiro)
 
