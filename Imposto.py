@@ -1,5 +1,5 @@
 ganhos = float(input("Ganhos no mês "))
-if ganhos <= 700.00: 
+if ganhos <= 400.00: 
     aliquota = 0
 elif ganhos <= 1500.00:
     aliquota = 0.1
