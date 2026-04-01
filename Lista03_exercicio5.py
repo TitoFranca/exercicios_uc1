@@ -17,4 +17,3 @@ for numero_par in numeros_par:
 
 # 3a Forma
 tamanho_lista_pares = len(numeros_par)
-for posi
