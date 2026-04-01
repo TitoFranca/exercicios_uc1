@@ -2,7 +2,7 @@
 pares = []
 
 # 2. Percorrer o intervalo de 86 até 906 (passo 2)
-for i in range(86, 907, 2):
+for i in range(85, 907, 2):
     pares.append(i)  # Adiciona o número à lista
 
 # 3. Imprimir a lista de números
