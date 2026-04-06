@@ -27,6 +27,7 @@ while continua == 0: #o zero servepara iniciar o comando. Para iniciar deverá s
 numero_praias_15km = 0
 numero_veranistas_praia_nao_asfaltada = 0
 quantidade_numero_de_praias_acesso_nao_asfaltado = 0
+media_veranistas = 0
 praias_acesso_asfaltado_menos_10000_veranistas = {}
 
 nomes_praia = praias.keys()
@@ -48,7 +49,8 @@ for nome in nomes_praia:
     if tipo_acesso == 1 and numero_veranistas <1000:
         praias_acesso_asfaltado_menos_10000_veranistas [nome] = distancia_centro
 
-media_veranistas = numero_veranistas_praia_nao_asfaltada / quantidade_numero_de_praias_acesso_nao_asfaltado
+if quantidade_numero_de_praias_acesso_nao_asfaltado >0:
+    media_veranistas = numero_veranistas_praia_nao_asfaltada / quantidade_numero_de_praias_acesso_nao_asfaltado
 
 print(f" Número de praias mais de 15 km do centro: {numero_praias_15km}")
 print(f" Média de veraistas de praias com acesso não asfaltado: {media_veranistas}")    
