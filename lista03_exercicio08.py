@@ -4,9 +4,9 @@ for i in range (1, 4):
     idade = int(input("Digite a idade "))
     altura = float(input("Digita a altura "))
 
-idade_media = 0
+soma_idade = 0
 
-if altura < 1.70:
-    idade_media = idade_media + idade
+    if altura < 1.70:
+        soma_idade = soma_idade + idade
+    print(f"A média de idade dos alunos abaixo de 1.70: {soma_idade}")
 
-print(f"A média de idade dos alunos abaixo de 1.70: {idade_media/3}")
