@@ -4,7 +4,7 @@ class Candidato:
         self.nome = nome
         self.nota_portugues = nota_portugues
         self.nota_matematica = nota_matematica
-        self.nota_conhcimento_gerais = nota_conhecimento_gerais
+        self.nota_conhecimento_gerais = nota_conhecimento_gerais
         self.media = 0.0
         self.situacao = "REPROVADO"
 
@@ -26,7 +26,7 @@ while continua == 0:
     candidatos.append(candidato)
 
     continua = int(input("\nDeseja cadastrar novo candidato? (0 - Sim / Qualquer outro número - Não)"))
-       print()
+       #print()#
 
 # for candidato in candidatos:
 #     print(candidato)
@@ -34,12 +34,16 @@ while continua == 0:
 #calcular a media dos candidatos e verificar se foi aprovado
 for candidato in candidatos:
     media = (candidato.nota_portugues + candidato.nota_matematica + candidato.nota_conhecimento_gerais)/3
+    candidato.media = media
 
     if candidato.nota_portugues <2.0 or candidato.nota_matematica <2.0 or candidato.nota_conhecimento_gerais <2.0:
         candidato_tem_nota_abaixo_2 = True
     else:
         candidato_tem_nota_abaixo_2 = False
     
-    if candidato.media > 4.0 anda candidato_tem_nota_abaixo_2 == False:
-        Candidato.situacao = "Aprovado"
+    if candidato.media > 4.0 and candidato_tem_nota_abaixo_2 == False:
+        candidato.situacao = "Aprovado"
+
+for candidato in candidatos:
+    print(f"Candidato: {candidato.nome} obteve média igual a {candidato.media} e está {candidato.situacao}")
         
