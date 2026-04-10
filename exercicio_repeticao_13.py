@@ -26,7 +26,7 @@ while continua == 0:
     candidatos.append(candidato)
 
     continua = int(input("\nDeseja cadastrar novo candidato? (0 - Sim / Qualquer outro número - Não)"))
-    print()
+       print()
 
 for candidato in candidatos:
     print(candidato)
